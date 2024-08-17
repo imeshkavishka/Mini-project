@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Environmentalt Pollution </title>
+    <link rel="icon" type="image/x-icon" href="2.png">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/8b8e75c8a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="he1">
+         
+        </div>    
+    </header>
+
+    <div id="app">
+    <h1>Feedback</h1>
+    <!-- Feedback form -->
+    <div class="feedback">
+        <label for="text">Name: </label>
+        <input type="text" v-model="name" placeholder="Your Name">
+        <label for="textarea">Comment: </label>
+        <textarea v-model="comment" placeholder="Your Comment"></textarea>
+        <button @click="submitFeedback">Submit Feedback</button>
+    </div>
+    <!-- Display feedback -->
+    <ul class="feedback-list">
+        <li v-for="(feedback, index) in feedbacks" :key="index" class="feedback-item">
+        <strong>{{ feedback.name }}</strong>: <br><br>{{ feedback.comment }}
+        </li>
+    </ul>
+    </div>
+
+
+<!-- Vue.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+        name: '',
+        comment: '',
+        feedbacks: []
+        },
+        methods: {
+        submitFeedback() {
+            if (this.name.trim() !== '' && this.comment.trim() !== '') {
+                this.feedbacks.push({ name: this.name, comment: this.comment });
+                this.name = '';
+                this.comment = '';
+            }
+        }
+    }
+    });
+</script>   
+    <div class="content-items">   
+        <nav>
+            <header>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Environmental Issues.html">Environmental Issues</a></li>
+                    <li><a href="Solutions.html">Solutions</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Community.html">Community</a></li>
+                </ul>
+                <div>
+                    <img src="2.png" class="logo">
+                </div> 
+            </header>
+        </nav>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h2>Imesh</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit culpa eum placeat iste,
+                     atque maxime possimus officiis. Natus architecto cumque quod ab voluptatem sed quis, nesciunt 
+                     eligendi fugit necessitatibus porro.</p>
+            </div>
+            <div class="col">
+                <h3>Contact <div class="underline"><span></span></div></h3>
+                <p>The Open University,</p>
+                <p>Nawala,Nugegoda </p>
+                <p>Sri Lanka.</p>
+                <p class="email-id">imeshkavishka53@gmail.com</p>
+                <h4>+94-705684555</h4>
+            
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div> </h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Environmental Issues.html">ENVIRONMENTAL ISSUES</a></li>
+                    <li><a href="Solutions.html">SOLUTIONS</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="Community.html">COMMUNITY</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                <form >
+                    <i class="fas fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <i class="fab fa-brands fa-facebook"></i>
+                    <i class="fab fa-brands fa-twitter"></i>
+                    <i class="fab fa-brands fa-whatsapp"></i>
+                    <i class="fab fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">2024- All Rights Reserved</p>
+    </footer>
+</body>
+</html>

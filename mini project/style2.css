@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+nav { 
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: rgba(186, 240, 190, 0.5);
+
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+nav ul{
+    float: left;
+    margin-left: 15px;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 20px;
+}
+
+nav ul li a{
+    line-height: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: rgba(0, 0, 0,0.7);
+    border-radius: 6px;
+}
+header{
+    position: relative;
+}
+footer{
+    margin-bottom: -550px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#08602f,#0a8961);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.col.h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #dbd2d2;
+    margin: 20px 0;
+}
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form.fas {
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icon .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.app {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+/* .feedback {
+    margin-bottom: 20px;
+} */
+.app h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+.feedback input[type="text"],
+.feedback textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.feedback button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.feedback button:hover {
+    background-color: #45a049;
+}
+.feedback-list {
+    list-style: none;
+    padding: 10px;
+}
+.feedback-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.he1{
+    margin-top: 150px;
+}
+
